@@ -1,0 +1,94 @@
+{
+ "name": "xstro-bot",
+ "description": "Simple WhatsaApp Bot To Handle All Your Needs",
+ "logo": "",
+ "keywords": ["whatsapp-bot"],
+ "success_url": "/",
+ "stack": "container",
+ "env": {
+  "OWNER_NAME": {
+   "description": "Owner's Name",
+   "value": "Astro"
+  },
+  "ALIVE_MESSAGE": {
+   "description": "Alive message for bot",
+   "value": ""
+  },
+  "AUTO_STATUS_SAVER": {
+   "description": "Auto Save All Your Contact's Status Posts.",
+   "required": false
+  },
+  "HEROKU_API_KEY": {
+   "description": "Put HEROKU API KEY",
+   "required": false
+  },
+  "HEROKU_APP_NAME": {
+   "description": "Put HEROKU APP NAME same as above.",
+   "required": false
+  },
+  "THUMB_IMAGE": {
+   "description": "Thumbnail Image for the bot",
+   "value": ""
+  },
+  "ANTI_BAD_WORD": {
+   "description": "Put Words To Filter From Group Chats",
+   "value": ""
+  },
+  "ANTILINK_VALUES": {
+   "description": "Put Link Without [HTTPS://] to filter from Group Chats",
+   "value": "chat.whatsapp.com,fb.com,instagram.com"
+  },
+  "ANTILINK_ACTION": {
+   "description": "What Does Bot If Link Is Found?",
+   "value": "remove"
+  },
+  "READ_MESSAGE": {
+   "description": "This Will Automatically Blue Tick All Your Chats.",
+   "value": "true"
+  },
+  "DISABLE_PM": {
+   "description": "Bot Will No Longer Work In Personal Chats",
+   "'value": "false"
+  },
+  "PREFIX": {
+   "description": "Enter Your Best Handler | Trigger",
+   "value": "/"
+  },
+  "OWNER_NUMBER": {
+   "description": "SUDO Numbers You Want To Control Your Bot",
+   "value": "2348039607375,2349027862116"
+  },
+  "SESSION_ID": {
+   "description": "Put Your Session ID Here To Run Bot"
+  },
+  "MONGODB_URI": {
+   "description": "MongoDb To Run Bot",
+   "value": ""
+  },
+  "WORKTYPE": {
+   "description": "Bot Mode Public | Private",
+   "value": "private"
+  },
+  "AUTO_REACTION": {
+   "description": "Reacts To All Messages Sent",
+   "value": "false",
+   "required": false
+  },
+  "PACK_INFO": {
+   "description": "Put packname;authorname.",
+   "value": "Astro;Xstro",
+   "required": false
+  },
+  "heroku": {
+   "description": "On Heroku?",
+   "value": "true",
+   "required": false
+  }
+ },
+ "formation": {
+  "worker": {
+   "quantity": 1,
+   "size": "basic"
+  }
+ }
+}
